@@ -34,4 +34,79 @@
   </gazebo>
   <!-- end of DIferential Control -->
 
+<gazebo>
+    <plugin name="imu_sim" filename="libhector_gazebo_ros_imu.so">
+        <updateRate>10</updateRate>
+        <bodyName>link_chassis</bodyName>
+        <topicName>imu</topicName>
+        <serviceName>imu</serviceName>
+      <!--  <accelOffset>0 0 0</accelOffset> (Vector3): constant acceleration offset-->
+<!--accelDrift (Vector3): standard deviation of the acceleration drift error-->
+       <!-- <accelDrift>0 0 0</accelDrift> --> 
+
+<!--accelDriftFrequency (Vector3): mean frequency of the acceleration drift-->
+      <!--  <accelDriftFrequency>300 300 300</accelDriftFrequency> -->
+
+<!--accelGaussianNoise (Vector3): standard deviation of the additive Gaussian acceleration noise-->
+      <!-- <accelGaussianNoise>0 0 0</accelGaussianNoise>-->
+
+<!--rateOffset (Vector3): constant rate offset-->
+        <!--<rateOffset>300 300 300</rateOffset>-->
+
+<!--rateDrift (Vector3): standard deviation of the rate drift error-->
+        <!-- <rateDrift>0 0 0</rateDrift>-->
+
+<!--rateDriftFrequency (Vector3): mean frequency of the rate drift-->
+     <!--   <rateDriftFrequency>0 0 0</rateDriftFrequency> -->
+
+<!--rateGaussianNoise (Vector3): standard deviation of the additive Gaussian rate noise-->
+        <!--USAVA ESTE <rateGaussianNoise>0 0 0</rateGaussianNoise>  -->
+
+<!--yawOffset (double): constant yaw/heading offset-->
+       <!-- <yawOffset>0 0</yawOffset> -->
+
+<!--yawDrift (double): standard deviation of the yaw/heading drift error-->
+        <!--USAVA ESTE <yawDrift>0</yawDrift>  -->
+
+<!--yawDriftFrequency (double): mean frequency of the yaw/heading drift-->
+     <!-- <yawDriftFrequency>50 50</yawDriftFrequency> -->
+
+<!--yawGaussianNoise (double): standard deviation of the yaw/heading additive Gaussian noise-->
+     <!-- <yawGaussianNoise>30</yawGaussianNoise>  -->
+
+<!--rpyOffsets (Vector3): if non-zero, used to calculate accelOffset and yawOffset so that resulting roll, pitch and yaw errors correspond to this values when the platform is leveled (for compatibility with gazebo_plugins)-->
+       <!--  <rpyOffsets>0 0 0</rpyOffsets>-->
+
+<!--gaussianNoise (double): if non-zero, this value is used as standard deviation of Gaussian noise for acceleration and angular rate measurements (for compatibility with gazebo_plugins)-->
+    <!--  <gaussianNoise>30</gaussianNoise> -->
+
+
+                    <!-- GYROS  -->
+    
+    <!---->  <rateOffset>0 0 0</rateOffset>       <!----> 
+    <!---->  <rateGaussianNoise>0 0 0</rateGaussianNoise>       <!----> 
+    <!---->  <rateDrift>0 0 0</rateDrift>       <!----> 
+    <!---->  <rateDriftFrequency>0 0 0</rateDriftFrequency>       <!----> 
+
+
+                    <!--  ACCEL -->
+
+
+    <!----> <accelOffset>0 0 0</accelOffset> <!---->
+    <!----> <accelGaussianNoise>0 0 0</accelGaussianNoise> <!-- -->
+    <!----> <accelDrift>0 0 0</accelDrift> <!---->
+    <!----> <accelDriftFrequency>0 0 0</accelDriftFrequency> <!---->
+        
+                  
+                
+                <!--  YAW -->
+
+    <yawOffset>0</yawOffset>
+    <yawDrift>3</yawDrift>  
+     <yawDriftFrequency>10</yawDriftFrequency> 
+     <yawGaussianNoise>0</yawGaussianNoise>
+    </plugin>
+  </gazebo>
+
+
 </robot>

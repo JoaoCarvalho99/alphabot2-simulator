@@ -19,10 +19,20 @@
     <remap from="/joint_states" to="/alphabot2/joint_states" />
   </node>
 
+
+   <!-- MARTELADA 
+   <node 
+    pkg="alphabot2_pantilt" 
+    type="alphabot2_pantilt_node_gazebo.py"  
+    name="alphabot2_pantilt_node_gazebo" 
+    ns="/alphabot2" 
+    output="screen" 
+    launch-prefix="xterm -e" />
+   -->
   <!-- launch node that interface Algorithm and gazebo -->
   <node 
     pkg="alphabot2_pantilt" 
-    type="alphabot2_pantilt_node_gazebo.py" 
+    type="alphabot2_pantilt_node_gazebo"  
     name="alphabot2_pantilt_node_gazebo" 
     ns="/alphabot2" 
     output="screen" 

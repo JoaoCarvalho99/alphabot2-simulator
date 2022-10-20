@@ -84,7 +84,7 @@ def main():
   # subscribe movement_listener
   rospy.Subscriber("/alphabot2/control", Twist, movementCmdCallback)
 
-  print "Alphabot2 is ready to operate!"
+  print ("Alphabot2 is ready to operate!")
 
   rate = rospy.Rate(10)
   while True:

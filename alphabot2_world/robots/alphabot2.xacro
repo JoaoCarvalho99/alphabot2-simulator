@@ -39,6 +39,7 @@
     <!-- caster back -->
     <xacro:caster name="caster_back"  origin_xyz="-0.05 0 -0.03"  />
     <!-- end of caster back -->
+
   </link>
   <!-- end of chassis -->
 

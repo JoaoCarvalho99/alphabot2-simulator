@@ -38,7 +38,7 @@
     <model name='alphabot2_world'>
       <static>1</static>
       <link name='link_ground'>
-        <collision name='collision'>
+       <collision name='collision'>
           <geometry>
             <plane>
               <normal>0 0 1</normal>
@@ -89,7 +89,7 @@
       <pose>0 0 0 0 0 0</pose>
     </model>
     
-    <model name='park'>
+<!--    <model name='park'>
 			<static>1</static>
 			<link name='link_park'>
         <collision name='park'>
@@ -138,9 +138,9 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-    </model>
+    </model> -->
     
-    <model name='semaphore_monitor'>
+<!--    <model name='semaphore_monitor'>
       <static>1</static>
       <pose>1.8 0 0 0 -0 0</pose>
       <link name='lcd1'>
@@ -236,12 +236,14 @@
         <gravity>1</gravity>
       </link>
     </model>
-   
+   -->
+
+
     <state world_name='default'>
       <sim_time>0 0</sim_time>
       <real_time>0 0</real_time>
       <wall_time>0 0</wall_time>
-      <model name='alphabot2_world'>
+     <model name='alphabot2_world'>
         <pose>0 0 0 0 -0 0</pose>
         <link name='link_ground'>
           <pose>0 0 0 0 -0 0</pose>

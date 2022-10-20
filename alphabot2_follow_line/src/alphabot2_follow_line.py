@@ -43,7 +43,7 @@ def sensorCallback(data):
     #cv2.imshow("Follow_line",edges)
     #cv2.waitKey(2)
     height, width, channels = img.shape
-    print height, width, channels
+    print (height, width, channels)
     lines = cv2.HoughLines(edges,2,np.pi/180,100)
 
     i = 0
