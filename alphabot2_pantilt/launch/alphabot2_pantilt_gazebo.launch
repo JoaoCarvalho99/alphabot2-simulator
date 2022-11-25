@@ -32,7 +32,7 @@
   <!-- launch node that interface Algorithm and gazebo -->
   <node 
     pkg="alphabot2_pantilt" 
-    type="alphabot2_pantilt_node_gazebo"  
+    type="alphabot2_pantilt_node_gazebo.py"
     name="alphabot2_pantilt_node_gazebo" 
     ns="/alphabot2" 
     output="screen" 

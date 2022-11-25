@@ -245,7 +245,7 @@
     <sensor name="sensor1_bottom" type="camera" >
       <visualize>1</visualize>
       <always_on>1</always_on>
-      <update_rate>40.0</update_rate>
+      <update_rate>300.0</update_rate>
       <camera name="sensor1_bottom">
       <origin rpy="0 0 0" xyz="0 0 0"/>
         <horizontal_fov>1.08504</horizontal_fov>
@@ -269,7 +269,7 @@
       </camera>
       <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
         <alwaysOn>true</alwaysOn>
-        <updateRate>40.0</updateRate>
+        <updateRate>300.0</updateRate>
         <cameraName>sensor1_bottom/</cameraName>
         <imageTopicName>image_raw</imageTopicName>
         <cameraInfoTopicName>camera_info</cameraInfoTopicName>
@@ -317,7 +317,7 @@
     <sensor name="sensor2_bottom" type="camera" >
       <visualize>1</visualize>
       <always_on>1</always_on>
-      <update_rate>40.0</update_rate>
+      <update_rate>300.0</update_rate>
       <camera name="sensor2_bottom">
       <origin rpy="0 0 0" xyz="0 0 0"/>
         <horizontal_fov>1.08504</horizontal_fov>
@@ -341,7 +341,7 @@
       </camera>
       <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
         <alwaysOn>true</alwaysOn>
-        <updateRate>40.0</updateRate>
+        <updateRate>300.0</updateRate>
         <cameraName>sensor2_bottom/</cameraName>
         <imageTopicName>image_raw</imageTopicName>
         <cameraInfoTopicName>camera_info</cameraInfoTopicName>
@@ -389,7 +389,7 @@
     <sensor name="sensor3_bottom" type="camera" >
       <visualize>1</visualize>
       <always_on>1</always_on>
-      <update_rate>40.0</update_rate>
+      <update_rate>300.0</update_rate>
       <camera name="sensor3_bottom">
       <origin rpy="0 0 0" xyz="0 0 0"/>
         <horizontal_fov>1.08504</horizontal_fov>
@@ -413,7 +413,7 @@
       </camera>
       <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
         <alwaysOn>true</alwaysOn>
-        <updateRate>40.0</updateRate>
+        <updateRate>300.0</updateRate>
         <cameraName>sensor3_bottom/</cameraName>
         <imageTopicName>image_raw</imageTopicName>
         <cameraInfoTopicName>camera_info</cameraInfoTopicName>
@@ -461,7 +461,7 @@
     <sensor name="sensor4_bottom" type="camera" >
       <visualize>1</visualize>
       <always_on>1</always_on>
-      <update_rate>40.0</update_rate>
+      <update_rate>300.0</update_rate>
       <camera name="sensor4_bottom">
       <origin rpy="0 0 0" xyz="0 0 0"/>
         <horizontal_fov>1.08504</horizontal_fov>
@@ -485,7 +485,7 @@
       </camera>
       <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
         <alwaysOn>true</alwaysOn>
-        <updateRate>40.0</updateRate>
+        <updateRate>300.0</updateRate>
         <cameraName>sensor4_bottom/</cameraName>
         <imageTopicName>image_raw</imageTopicName>
         <cameraInfoTopicName>camera_info</cameraInfoTopicName>
@@ -533,7 +533,7 @@
     <sensor name="sensor5_bottom" type="camera" >
       <visualize>1</visualize>
       <always_on>1</always_on>
-      <update_rate>40.0</update_rate>
+      <update_rate>300.0</update_rate>
       <camera name="sensor5_bottom">
       <origin rpy="0 0 0" xyz="0 0 0"/>
         <horizontal_fov>1.08504</horizontal_fov>

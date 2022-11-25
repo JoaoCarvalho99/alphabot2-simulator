@@ -44,11 +44,11 @@ def calculateMovement(sensorsTop, sensorsBottom):
   obstacleRight, obstacleLeft = sensorsTop.data
   print(sensorsTop.data)
   if obstacleLeft: #TODO should this also consider obstacleRight and obstacleLeft simultaneously?
-    print "Obstacle found on the left. Turning right"
+    print ("Obstacle found on the left. Turning right")
     msg.linear.x = LOW_LINEAR_SPEED
     msg.angular.z = - HIGH_ANGULAR_SPEED
   elif obstacleRight:
-    print "Obstacle found on the right. Turning left"
+    print ("Obstacle found on the right. Turning left")
     msg.linear.x = LOW_LINEAR_SPEED
     msg.angular.z = HIGH_ANGULAR_SPEED
   else:

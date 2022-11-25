@@ -1,4 +1,4 @@
-material Pista1/Image
+material Pista6/Image
 {
   technique
   {
@@ -11,7 +11,7 @@ material Pista1/Image
 
       texture_unit
 			{
-				texture track.png
+				texture pista6.png
 			}
     }
   }
