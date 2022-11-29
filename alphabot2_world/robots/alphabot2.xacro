@@ -60,7 +60,7 @@
   <!-- end of joint for left wheel -->
 
   <!-- Lower Camera-->
-  <link name="lower_camera_link">
+<!--  <link name="lower_camera_link">
     <inertial>
       <mass value="0.0225"/>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -81,7 +81,7 @@
     </visual>
   </link>
 
-  <joint name="joint_lower_camera_link" type="continuous"><!--AQUI USAM REVOLUTE -->
+  <joint name="joint_lower_camera_link" type="continuous">
     <origin rpy="0 0 0" xyz="0 0 0.045"/>
     <child link="lower_camera_link" />
     <parent link="link_chassis"/>
@@ -92,8 +92,8 @@
 
   <gazebo reference="lower_camera_link">
         <material>Gazebo/Yellow</material>
-        <!--selfCollide>false</selfCollide>
-        <turnGravityOff>true</turnGravityOff-->
+ (estava comentado)     <  selfCollide>false</selfCollide>
+        <turnGravityOff>true</turnGravityOff> (fim comentado)
   </gazebo>
 
   <transmission name="pan_trans">
@@ -104,12 +104,12 @@
     <actuator name="camera_pan_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
-  </transmission>
+  </transmission> -->
   <!--End Lower Camera-->
 
 
   <!--Upper Camera-->
-  <link name="upper_camera_link">
+ <!-- <link name="upper_camera_link">
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <inertial>
       <mass value="0.0225"/>
@@ -133,12 +133,12 @@
 
   <gazebo reference="upper_camera_link">
         <material>Gazebo/Yellow</material>
-        <!--selfCollide>true</selfCollide>
-        <turnGravityOff>true</turnGravityOff-->
+        < (estava comentado) selfCollide>true</selfCollide>
+        <turnGravityOff>true</turnGravityOff  (fim comentado)>
   </gazebo>
 
   <joint name="joint_upper_camera_link" type="revolute">
-    <origin rpy="0 0 0" xyz="0 0 0.045"/> <!--0.045-->
+    <origin rpy="0 0 0" xyz="0 0 0.045"/>
     <child link="upper_camera_link" />
     <parent link="lower_camera_link"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
@@ -154,7 +154,7 @@
     <actuator name="camera_tilt_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
-  </transmission>
+  </transmission> -->
   <!--End Upper Camera-->
 
 
@@ -166,7 +166,7 @@
   </gazebo>
 
   <!-- camera -->
-  <gazebo reference="upper_camera_link">
+ <!-- <gazebo reference="upper_camera_link">
     <sensor name="alphabot2_camera" type="camera" >
       <visualize>1</visualize>
       <always_on>1</always_on>
@@ -188,9 +188,6 @@
         </clip>
         <noise>
           <type>gaussian</type>
-          <!-- Noise is sampled independently per pixel on each frame.
-               That pixel's noise value is added to each of its color
-               channels, which at that point lie in the range [0,1]. -->
           <mean>0.0</mean>
           <stddev>0.007</stddev>
         </noise>
@@ -210,7 +207,7 @@
         <distortionT2>0.0</distortionT2>
       </plugin>
     </sensor>
-  </gazebo>
+  </gazebo> -->
 
   <joint name="sensor1_joint" type="fixed">
     <axis xyz="0 1 0" />
