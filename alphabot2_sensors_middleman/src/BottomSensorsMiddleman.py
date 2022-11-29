@@ -30,10 +30,10 @@ def callback(sensor1, sensor2, sensor3, sensor4, sensor5):
   brightness4 = round(np.mean(cv2.cvtColor(bridge.imgmsg_to_cv2(sensor4, "bgr8"),cv2.COLOR_BGR2GRAY).flatten())*100/255)
   print(brightness4)
 
-  brightness5 = round(np.mean(cv2.cvtColor(bridge.imgmsg_to_cv2(sensor5, "bgr8"),cv2.COLOR_BGR2GRAY).flatten())*100/255)
+  brightness5 = round(np.mean(cv2.cvtColor(bridge.imgmsg_to_cv2(sensor5, "bgr8"),cv2.COLOR_BGR2GRAY).flatten())*100/255) 
   print(brightness5)
 
-  msg.data = [brightness1, brightness2, brightness3, brightness4, brightness5]
+  msg.data = [int(brightness1), int(brightness2), int(brightness3), int(brightness4), int(brightness5)]
 
   algorithmTopic.publish(msg)
 
