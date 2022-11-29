@@ -17,6 +17,7 @@ def callback(sensor1, sensor2, sensor3, sensor4, sensor5):
 
   msg = Int32MultiArray()
   bridge = CvBridge()
+
   brightness1 = round(np.mean(cv2.cvtColor(bridge.imgmsg_to_cv2(sensor1, "bgr8"),cv2.COLOR_BGR2GRAY).flatten())*100/255)
   print(brightness1)
 
